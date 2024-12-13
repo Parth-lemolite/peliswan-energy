@@ -26,7 +26,10 @@ const Products = () => {
 
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4 md:gap-6 px-4 md:px-16 mt-6">
         {products.map((product) => (
-          <div key={product.id} className=" rounded-lg  overflow-hidden">
+          <div
+            key={product.id}
+            className="overflow-hidden shadow-md px-2 py-3  rounded-xl"
+          >
             {/* Image Container */}
             <Link href={"product_1"}>
               <div className="h-32 md:h-60 relative group">
@@ -34,15 +37,15 @@ const Products = () => {
                   src={product.image}
                   alt={product.title}
                   layout="fill"
-                  objectFit="contain" /* Ensure the full image is visible inside the container */
-                  className="rounded-t-lg transition-transform duration-300 group-hover:scale-110"
+                  // objectFit="contain" /* Ensure the full image is visible inside the container */
+                  className="rounded-xl transition-transform duration-300 group-hover:scale-110"
                   priority
                 />
               </div>
             </Link>
 
             {/* Content */}
-            <div className="md:p-4">
+            <div className="md:p-2 mt-3">
               <h3 className="text-lg font-medium text-gray-800">
                 {product.title}
               </h3>

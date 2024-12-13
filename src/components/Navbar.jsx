@@ -22,7 +22,7 @@ function NavItem({ children, href }) {
   };
 
   return (
-    <li className="nav-link">
+    <li className="nav-link font-semibold tracking-widest">
       <span className="cursor-pointer" onClick={(e) => handleScroll(e, href)}>
         {children}
       </span>

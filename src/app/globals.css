@@ -26,11 +26,16 @@ html {
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 1px;
+  height: 1.8px;
   background: linear-gradient(to right, #4caf50, #0099cc);
   transition: width 0.3s ease-in-out;
 }
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+.custom-phone-number .PhoneInputInput:focus {
+  outline: none;
+  border: none;
 }
